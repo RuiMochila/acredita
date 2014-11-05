@@ -75,9 +75,10 @@ div {
 #know_more{
     position:relative;
     left:0px;
-    top:-10px;
+    top:-40px;
     color:black;
     font-size: 200% !important;
+    width:100px;
 }
 
 .lead {
@@ -106,7 +107,7 @@ div {
 .intro-message {
     position: relative;
     /*padding-top: 20%;*/
-    /*padding-bottom: 10%;*/
+    margin-bottom: 20px;
     height: 100px;
 }
 
