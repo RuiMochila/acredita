@@ -102,12 +102,12 @@
                         <br>
                         <div class="col-lg-12 col-md-12">
                             <div class="form-group">
-                                <input id="ideia_ideia" type="radio" name="ideia" value="ideia">
+                                <input id="ideia_ideia" type="radio" name="ideia" value="ideia" required>
                                 <label for="ideia_ideia">Tenho uma ideia empreendedora</label> <br>
-                                <input id="ideia_plano" type="radio" name="ideia" value="plano">
+                                <input id="ideia_plano" type="radio" name="ideia" value="plano" required>
                                 <label for="ideia_plano">Tenho uma ideia e um plano de negócio</label> <br>
-                                <input id="ideia_equipa" type="radio" name="ideia" value="equipa">
-                                <label for="ideia_equipa">Tenho uma ideia mas gostava de me juntar a uma equipa</label> <br>
+                                <input id="ideia_equipa" type="radio" name="ideia" value="equipa" required>
+                                <label for="ideia_equipa">Tenho uma ideia mas gostava de me juntar a uma equipa</label>
                                 
                                 <!-- <input class="icheckbox_square" type="checkbox" id="square-checkbox-1" checked>
                                 <label for="square-checkbox-1">PHP Expert</label> -->
@@ -118,11 +118,19 @@
                             <br>
                             <div class="form-group">
                                 <label for="descricao">Descreva de forma sucinta a ideia que gostaria de implementar:</label>
-                                <textarea name="descricao" rows="8" type="text" class="form-control" style="resize: none;"></textarea>
+                                <textarea name="descricao" rows="8" type="text" class="form-control" style="resize: none;" placeholder="MÁX. 300 CARACTERES."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input id="terms" type="checkbox" name="terms" value="terms" checked>
+                                <label for="terms">Aceitar termos de registo</label> <br>
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-large btn-primary pull-right" value="SUBMETER" style="z-index:99;">
                             </div>
                         </div>
                     </div>
                 </form>
+
                 <!-- <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Landing Page</h1>
@@ -144,6 +152,9 @@
                 </div> -->
 
             </div>
+            <div id="know_more">
+                    SAIBA +
+                </div>
             <!-- <div style="color:black; text-align:left;">SAIBA MAIS +</div> -->
         </div>
         <!-- /.container -->

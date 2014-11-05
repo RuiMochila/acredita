@@ -44,6 +44,7 @@ input[type="radio"] {
     -o-appearance: checkbox;      /* not currently supported */
 }
 
+/*
 .arrow-right {
     width: 0; 
     height: 0; 
@@ -52,10 +53,7 @@ input[type="radio"] {
     
     border-left: 600px solid red;
 
-    /*position: relative;
-    bottom: 0px;
-    left: 0px;*/
-}
+}*/
 
 * {
   -webkit-border-radius: 0 !important;
@@ -63,6 +61,24 @@ input[type="radio"] {
           border-radius: 0 !important;
 }
 
+
+@font-face {
+    font-family: Agency;
+    src: url(../fonts/AGENCYR.TTF);
+}
+
+div {
+    font-family: Agency;
+    font-size: 102%;
+}
+
+#know_more{
+    position:relative;
+    left:0px;
+    top:-10px;
+    color:black;
+    font-size: 200% !important;
+}
 
 .lead {
     font-size: 18px;
@@ -101,9 +117,17 @@ input[type="radio"] {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 100%;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+input[type="submit"]{
+    height:50px; 
+    width:200px; 
+    font-size: 180%; 
+    background-color:white; 
+    color:#2089b5;
 }
 
 .intro-message > h3 {
