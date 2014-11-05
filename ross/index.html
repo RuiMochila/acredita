@@ -35,9 +35,95 @@
     <div class="intro-header">
 
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="intro-message">
+                        Header
+                    </div>
+                </div>
+                <hr class="intro-divider">
+            </div>
+            
+            <div class="row">
+                <form action="">
+                    <div class="col-lg-6">
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input name="name" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="surname">Apelido</label>
+                                <input name="surname" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label for="email_confirmation">Confirmação de Email</label>
+                                <input name="email_confirmation" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <hr>
+                        <br><br>
+
+                        <div style="padding-left:15px;">
+                            Defina a sua palavra-chave de inscrição nos concursos
+                        </div>
+                        <br>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="password">Palavra-chave</label>
+                                <input name="password" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="password_confirmation">Confirmação de Palavra-chave</label>
+                                <input name="password_confirmation" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        Selecione a opção em que melhor se enquadra:
+                        <br>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <input id="ideia_ideia" type="radio" name="ideia" value="ideia">
+                                <label for="ideia_ideia">Tenho uma ideia empreendedora</label> <br>
+                                <input id="ideia_plano" type="radio" name="ideia" value="plano">
+                                <label for="ideia_plano">Tenho uma ideia e um plano de negócio</label> <br>
+                                <input id="ideia_equipa" type="radio" name="ideia" value="equipa">
+                                <label for="ideia_equipa">Tenho uma ideia mas gostava de me juntar a uma equipa</label> <br>
+                                
+                                <!-- <input class="icheckbox_square" type="checkbox" id="square-checkbox-1" checked>
+                                <label for="square-checkbox-1">PHP Expert</label> -->
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <br>
+                            <div class="form-group">
+                                <label for="descricao">Descreva de forma sucinta a ideia que gostaria de implementar:</label>
+                                <textarea name="descricao" rows="8" type="text" class="form-control" style="resize: none;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Landing Page</h1>
                         <h3>A Template by Start Bootstrap</h3>
@@ -54,12 +140,11 @@
                             </li>
                         </ul> 
                     </div>
-                    <!-- <div class="arrow-right"></div> -->
-
-                </div>
+                    <div class="arrow-right"></div>
+                </div> -->
 
             </div>
-            <div style="color:black; text-align:left;">SAIBA MAIS +</div>
+            <!-- <div style="color:black; text-align:left;">SAIBA MAIS +</div> -->
         </div>
         <!-- /.container -->
 

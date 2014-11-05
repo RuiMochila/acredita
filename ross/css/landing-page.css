@@ -22,6 +22,28 @@ h6 {
 }
 
 
+/*.icheckbox_square{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../img/square.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square {
+    background-position: 0 0;
+}*/
+
+input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;     /* not currently supported */
+    -o-appearance: checkbox;      /* not currently supported */
+}
+
 .arrow-right {
     width: 0; 
     height: 0; 
@@ -35,6 +57,11 @@ h6 {
     left: 0px;*/
 }
 
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
 
 
 .lead {
@@ -48,7 +75,7 @@ h6 {
     /*padding-bottom: 50px;*/
     height: 650px;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
     color: #f8f8f8;
     /*background: url(../img/inov_bg.png) no-repeat center center;
     background-size: cover;*/
@@ -62,8 +89,9 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    /*padding-top: 20%;*/
+    /*padding-bottom: 10%;*/
+    height: 100px;
 }
 
 .intro-message > h1 {
