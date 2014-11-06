@@ -78,7 +78,7 @@ $( document ).ready(function(){
 			// });
 		 //  		// Submit ajax form and treat answer.
 
-		 event.preventDefault();
+		 // event.preventDefault();
 	});
 
 
