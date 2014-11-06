@@ -73,29 +73,29 @@
                         
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label for="fname_101">Name</label>
-                                <input name="fname_101" name="name" type="text" class="form-control">
+                                <label for="fname_101">Nome</label>
+                                <input name="fname_101" name="name" type="text" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label for="lname_105">Apelido</label>
-                                <input name="lname_105" type="text" class="form-control">
+                                <input name="lname_105" type="text" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="col-lg-12 col-md-12">
                             <div class="form-group">
                                 <label for="email_102">Email</label>
-                                <input name="email_102" type="text" class="form-control">
+                                <input id="email" name="email_102" type="email" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="col-lg-12 col-md-12">
                             <div class="form-group">
                                 <label for="campoe_301_106">Confirmação de Email</label>
-                                <input name="campoe_301_106" type="text" class="form-control">
+                                <input id="email_confirmation" name="campoe_301_106" type="email" class="form-control" required>
                             </div>
                         </div>
                         <hr>
@@ -107,13 +107,13 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label for="campoe_302_107">Palavra-chave</label>
-                                <input name="campoe_302_107" type="password" class="form-control">
+                                <input id="password" min="8" name="campoe_302_107" type="password" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
                                 <label for="campoe_303_108">Confirmação de Palavra-chave</label>
-                                <input name="campoe_303_108" type="password" class="form-control">
+                                <input id="password_confirmation" name="campoe_303_108" type="password" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -139,10 +139,10 @@
                             <br>
                             <div class="form-group">
                                 <label for="campoe_306_111">Descreva de forma sucinta a ideia que gostaria de implementar:</label>
-                                <textarea name="campoe_306_111" rows="8" type="text" class="form-control" style="resize: none;" placeholder="MÁX. 300 CARACTERES."></textarea>
+                                <textarea id="idea_description" name="campoe_306_111" rows="8" type="text" class="form-control" style="resize: none;" placeholder="MÁX. 300 CARACTERES." maxlength="300" required></textarea>
                             </div>
                             <div class="form-group">
-                                <input id="terms" type="checkbox" name="terms" value="terms" checked>
+                                <input id="terms" type="checkbox" name="terms" value="terms" checked required>
                                 <label for="terms">Aceitar termos de registo</label> <br>
                             </div>
                             <div>

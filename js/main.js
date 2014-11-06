@@ -10,8 +10,38 @@ $( document ).ready(function(){
 
 	var form = $('form');
 	$("form").on("submit",function( event ) {
-  		
   		// event.preventDefault();
+  		
+  		// if($('#idea_description').val().length > 300){
+  		// 	event.preventDefault();	
+  		// 	console.log("indeia maior que 300 chars");
+  		// }
+
+  // 		if($('#email').val() != $('#email_confirmation').val()){
+		// 	event.preventDefault();	
+  // 			console.log("Emails não são iguais");
+  // 		}
+  		
+  // 		if($('#password').val().length < 8){
+		// 	event.preventDefault();	
+  // 			console.log("Password pequena de mais.");
+		// }
+
+  // 		if($('#password').val() != $('#password_confirmation').val()){
+		// 	event.preventDefault();	
+  // 			console.log("Passwords não são iguais");
+  // 		}
+
+  // 		$('#ideia_equipa').on('change', function(){
+		// 	$("#idea_description").prop('disabled', true);
+  // 		});
+
+
+
+  		// $('#idea_description').removeAttr("required");
+  		// $('#idea_description').prop('required',true);
+
+
   		// console.log("not");
   		// $.ajax({
     //         type: form.attr('method'),
