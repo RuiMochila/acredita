@@ -91,7 +91,7 @@ $( document ).ready(function(){
 	$('input:radio[name="campoe_308_114"]').on('change',
 	    function(){
 	    	console.log("changed");
-	    	if ($(this).is(':checked') && $(this).val() == 'equipa') {
+	    	if ($(this).is(':checked') && $(this).val() == 'juntar outra equipa') {
 	    		console.log("é equipa");
         		$("#idea_description").prop('disabled', true);
         		$('#idea_description').removeAttr("required");
