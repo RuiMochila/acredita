@@ -63,13 +63,13 @@ input[type="radio"] {
 
 
 @font-face {
-    font-family: Agency;
-    src: url(../fonts/AGENCYR.TTF);
+    font-family: Din;
+    src: url(../fonts/dinregularwebfont.TTF);
 }
 
 div {
-    font-family: Agency;
-    font-size: 102%;
+    font-family: Din;
+    font-size: 100%;
 }
 
 #know_more{
@@ -78,7 +78,7 @@ div {
     top:-40px;
     color:black;
     font-size: 200% !important;
-    width:100px;
+    width:120px;
 }
 
 .lead {
