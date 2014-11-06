@@ -16,31 +16,35 @@ $( document ).ready(function(){
   		// 	event.preventDefault();	
   		// 	console.log("indeia maior que 300 chars");
   		// }
+  		var errors = [];
 
-  // 		if($('#email').val() != $('#email_confirmation').val()){
-		// 	event.preventDefault();	
-  // 			console.log("Emails não são iguais");
-  // 		}
+  		if($('#email').val() != $('#email_confirmation').val()){
+			// event.preventDefault();	
+  			console.log("Emails não são iguais");
+  			errors.push("Os Emails não são iguais.");
+  		}
   		
-  // 		if($('#password').val().length < 8){
-		// 	event.preventDefault();	
-  // 			console.log("Password pequena de mais.");
-		// }
+  		if($('#password').val().length < 8){
+			// event.preventDefault();	
+  			console.log("Password pequena de mais.");
+  			errors.push("Password pequena. Introduza uma com 8 caractaeres ou mais.");
+		}
 
-  // 		if($('#password').val() != $('#password_confirmation').val()){
-		// 	event.preventDefault();	
-  // 			console.log("Passwords não são iguais");
-  // 		}
+  		if($('#password').val() != $('#password_confirmation').val()){
+			// event.preventDefault();	
+  			console.log("Passwords não são iguais");
+  			errors.push("As passwords não são iguais");
+  		}
 
-  // 		$('#ideia_equipa').on('change', function(){
-		// 	$("#idea_description").prop('disabled', true);
-  // 		});
-
-
-
-  		// $('#idea_description').removeAttr("required");
-  		// $('#idea_description').prop('required',true);
-
+  		if (errors.length > 0) {
+  			event.preventDefault();
+  			var error_text = "";
+	  		for (var i = errors.length - 1; i >= 0; i--) {
+	  			error_text += errors[i];
+	  			error_text += "\n";
+	  		};
+	  		window.alert(error_text);	
+  		};
 
   		// console.log("not");
   		// $.ajax({
@@ -73,7 +77,41 @@ $( document ).ready(function(){
 			// }
 			// });
 		 //  		// Submit ajax form and treat answer.
+
+		 event.preventDefault();
 	});
+
+
+	$('input:radio[name="campoe_308_114"]').on('change',
+	    function(){
+	    	console.log("changed");
+	    	if ($(this).is(':checked') && $(this).val() == 'equipa') {
+	    		console.log("é equipa");
+        		$("#idea_description").prop('disabled', true);
+        		$('#idea_description').removeAttr("required");
+    		}else{
+				console.log("n é equipa");
+        		$("#idea_description").prop('disabled', false);
+        		$('#idea_description').prop('required',true);
+    		}
+	        // if ($(this).val() == 'Yes') {
+	        //     $(appended).appendTo('body');
+	        // }
+	        // else {
+	        //     $(appended).remove();
+	        // }
+	    }
+	);
+
+
+  	// 	$('#ideia_equipa').on('change', function(){
+			// $("#idea_description").prop('disabled', true);
+  	// 	});
+
+
+
+  		// $('#idea_description').removeAttr("required");
+  		// $('#idea_description').prop('required',true);
 
 
 });
