@@ -5,8 +5,14 @@ $( document ).ready(function(){
 
 	$("#know_more").click(function(){
 	  $("#content").show();
+	  $('html,body').animate({
+   		scrollTop: $("#content").offset().top
+		});
 	  // this.hide();
 	});
+
+	$('#u_identifier').val(makeid());
+	// #u_identifier
 
 	var form = $('form');
 	$("form").on("submit",function( event ) {
@@ -113,5 +119,16 @@ $( document ).ready(function(){
   		// $('#idea_description').removeAttr("required");
   		// $('#idea_description').prop('required',true);
 
-
 });
+
+
+	function makeid()
+	{
+    	var text = "";
+    	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    	for( var i=0; i < 15; i++ )
+        	text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    	return text;
+	}
